@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/light_grey"
+
+>
+    <ImageView
+            android:layout_width="158dp"
+            android:layout_height="141dp" app:srcCompat="@drawable/auth" android:id="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="44dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  tools:ignore="MissingConstraints"
+                  android:orientation="horizontal">
+
+
+    </LinearLayout>
+    <TextView
+            android:text="Code verification"
+            android:gravity="center"
+            android:layout_width="272dp"
+            android:layout_height="77dp" android:id="@+id/textView3" tools:layout_editor_absoluteY="235dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/work_sans_semibold"
+            android:textSize="30dp"
+            style="@style/CardView"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" tools:ignore="MissingConstraints"/>
+    <TextView
+            android:text="Enter verification code"
+            android:gravity="center"
+            android:layout_width="264dp"
+            android:layout_height="54dp" android:id="@+id/textView2" tools:layout_editor_absoluteY="338dp"
+            android:background="@drawable/radius"
+            android:textSize="20dp"
+            style="@style/CardView"
+            android:backgroundTint="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="76dp"
+            tools:ignore="MissingConstraints"/>
+    <TextView
+            android:text="Enter 4 digit verification code sent to your email address"
+            android:layout_width="345dp"
+            android:layout_height="78dp"
+            android:id="@+id/textView6"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/work_sans_medium"
+            android:textColor="@color/dim_gray"
+
+
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginTop="8dp"
+    />
+    <Button
+            android:text="Verify"
+            android:layout_width="252dp"
+            android:layout_height="48dp" android:id="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintVertical_bias="0.0"
+            android:background="@drawable/radius_button"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"
+
+
+    />
+    <TextView
+            android:text="Didn't receive OTP?"
+            android:layout_width="219dp"
+            android:layout_height="36dp" android:id="@+id/textView8" tools:layout_editor_absoluteY="542dp"
+            tools:layout_editor_absoluteX="24dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/work_sans_medium"
+
+
+            tools:ignore="MissingConstraints"/>
+    <Button
+            android:text="Resend it"
+            android:layout_width="147dp"
+            android:layout_height="48dp" android:id="@+id/button5" tools:layout_editor_absoluteY="534dp"
+
+            android:textColor="@color/purple"
+            android:layout_marginLeft="@dimen/cardview_default_radius"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+
+            tools:ignore="MissingConstraints" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView8" app:layout_constraintHorizontal_bias="0.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
